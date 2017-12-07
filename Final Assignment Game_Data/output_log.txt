@@ -1,0 +1,153 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     912 MB
+    Driver:   22.21.13.8541
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\thorn\Source\Repos\AI-OOP-GUI2-GUI3-Assignment\Final Assignment Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\thorn\Source\Repos\AI-OOP-GUI2-GUI3-Assignment\Final Assignment Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\thorn\Source\Repos\AI-OOP-GUI2-GUI3-Assignment\Final Assignment Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\thorn\Source\Repos\AI-OOP-GUI2-GUI3-Assignment\Final Assignment Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\thorn\Source\Repos\AI-OOP-GUI2-GUI3-Assignment\Final Assignment Game_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\thorn\Source\Repos\AI-OOP-GUI2-GUI3-Assignment\Final Assignment Game_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\thorn\Source\Repos\AI-OOP-GUI2-GUI3-Assignment\Final Assignment Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\thorn\Source\Repos\AI-OOP-GUI2-GUI3-Assignment\Final Assignment Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\thorn\Source\Repos\AI-OOP-GUI2-GUI3-Assignment\Final Assignment Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\thorn\Source\Repos\AI-OOP-GUI2-GUI3-Assignment\Final Assignment Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.199 seconds
+Platform assembly: C:\Users\thorn\Source\Repos\AI-OOP-GUI2-GUI3-Assignment\Final Assignment Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\thorn\Source\Repos\AI-OOP-GUI2-GUI3-Assignment\Final Assignment Game_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.403986 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 544c -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.370775 ms
+
+Unloading 67 unused Assets to reduce memory usage. Loaded Objects now: 350.
+Total: 0.436206 ms (FindLiveObjects: 0.031646 ms CreateObjectMapping: 0.023948 ms MarkObjects: 0.189450 ms  DeleteObjects: 0.190733 ms)
+
+The class named 'Item' is not derived from MonoBehaviour or ScriptableObject!
+ 
+(Filename:  Line: 1526)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.122435 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 671.
+Total: 0.353241 ms (FindLiveObjects: 0.058588 ms CreateObjectMapping: 0.017533 ms MarkObjects: 0.266428 ms  DeleteObjects: 0.009836 ms)
+
+Apple Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Meat Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Bow And Arrow Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Sword Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Shield Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Axe Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Armour Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Belt Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Boots Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Brace Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Cloak Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Glove Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Helmet Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Pants Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Shoulder Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Book Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HP Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MP Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Scroll Was Added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Diamond was added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Ingot was added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Ring was added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Necklace was added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Coins was added
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DragAndDropChest.ToggleInv () [0x00000] in <filename unknown>:0 
+  at DragAndDropChest.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DragAndDropChest.ToggleInv () [0x00000] in <filename unknown>:0 
+  at DragAndDropChest.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+

@@ -27,7 +27,6 @@ public class DragAndDropInventory : MonoBehaviour
 
     [Header("References and Locations")]
     public FirstPersonController playerMove;
-    public MouseLook mainCam;
     public float scrW, scrH;
     #endregion
     #region Clamp to Screen
@@ -174,7 +173,6 @@ public class DragAndDropInventory : MonoBehaviour
     {
         scrW = Screen.width / 16;
         scrH = Screen.height / 9;
-        mainCam = Camera.main.GetComponent<MouseLook>();
         playerMove = GetComponent<FirstPersonController>();
         inventorySize = new Rect(scrW, scrH, 6 * scrW, 4.5f * scrH);
         for (int i = 0; i < slotX * slotY; i++)
@@ -182,10 +180,24 @@ public class DragAndDropInventory : MonoBehaviour
             inventory.Add(new Item());
         }
         AddItem(0);
-        AddItem(0);
         AddItem(1);
+        AddItem(100);
+        AddItem(101);
         AddItem(102);
+        AddItem(103);
+        AddItem(200);
+        AddItem(201);
+        AddItem(202);
+        AddItem(203);
+        AddItem(204);
+        AddItem(205);
         AddItem(206);
+        AddItem(207);
+        AddItem(208);
+        AddItem(600);
+        AddItem(700);
+        AddItem(701);
+        AddItem(801);
 
     }
     #endregion

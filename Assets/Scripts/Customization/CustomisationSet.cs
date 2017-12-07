@@ -706,8 +706,8 @@ namespace GUIWork
                 //this button will run the save function and also load into the game level
                 if (skillPoints == 0 && name != "")
                 {
-                    Save();
-                    SceneManager.LoadScene("Game");
+                    Save(); // Call save 
+                    SceneManager.LoadScene("Tutorial"); // Load tutorial scene
                 }
             }
             #endregion

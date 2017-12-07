@@ -5,7 +5,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class Inventory : MonoBehaviour
 {
-    #region Variables Eskeetit
+    #region Variables
     [Header("Inventory")]
     public List<Item> inv = new List<Item>();
     public Item selectedItem;
@@ -25,66 +25,22 @@ public class Inventory : MonoBehaviour
         wHandler = GameObject.FindGameObjectWithTag("WeaponHandler").GetComponent<Transform>();
         hHandler = GameObject.FindGameObjectWithTag("HeadHandler").GetComponent<Transform>();
 
-        // Add all items here lol
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(1));
-        inv.Add(ItemGen.CreateItem(100));
-        inv.Add(ItemGen.CreateItem(101));
-        inv.Add(ItemGen.CreateItem(102));
-        inv.Add(ItemGen.CreateItem(103));
-        inv.Add(ItemGen.CreateItem(200));
-        inv.Add(ItemGen.CreateItem(201));
-        inv.Add(ItemGen.CreateItem(202));
-        inv.Add(ItemGen.CreateItem(203));
-        inv.Add(ItemGen.CreateItem(204));
-        inv.Add(ItemGen.CreateItem(205));
-        inv.Add(ItemGen.CreateItem(206));
-        inv.Add(ItemGen.CreateItem(207));
-        inv.Add(ItemGen.CreateItem(208));
-        inv.Add(ItemGen.CreateItem(209));
-        inv.Add(ItemGen.CreateItem(210));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
-        inv.Add(ItemGen.CreateItem(0));
+   
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab)) // IF I press TAB
         {
-            ToggleInv();
+            ToggleInv(); // Open inventory
         }
-
-        if (Input.GetKeyDown(KeyCode.Equals))
-        {
-            inv.Add(ItemGen.CreateItem(0));
-        }
-        if (Input.GetKeyDown(KeyCode.Minus))
-        {
-            inv.Remove(inv[inv.Count]);
-        }
-
     }
 
     public bool ToggleInv()
     {
-        if (showInv)
+        if (showInv) 
         {
-            showInv = false;
+            showInv = false; 
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;

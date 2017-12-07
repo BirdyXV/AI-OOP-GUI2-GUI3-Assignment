@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace AI_OOP_Assignment
 {
@@ -35,10 +36,10 @@ namespace AI_OOP_Assignment
 
         void OnCollisionEnter(Collision col)
         {
-            if (col.gameObject.tag == "Player")
+            if (col.gameObject.tag == "Player") // IF you collide with a gameobject with the tag "Player"
             {
-                Destroy(gameObject);
-                GUI.Box(new Rect(0, 100, 200, 25), "You caught the burglar!");
+                Destroy(gameObject); // Destroy yourself
+                SceneManager.LoadScene("Win"); // Load Win scene
             }
         }
     }

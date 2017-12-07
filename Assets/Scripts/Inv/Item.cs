@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Item
+public class Item 
 {
     #region Private Variables 
     private int _idNum;
