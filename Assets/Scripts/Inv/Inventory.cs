@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class Inventory : MonoBehaviour
 {
@@ -13,17 +14,14 @@ public class Inventory : MonoBehaviour
     public int money;
     [Header("References And Locations")]
     public Vector2 scrollPos = Vector2.zero;
-    public MouseLook mainCam, playerCam;
-    public Movement playerMove;
+    public FirstPersonController playerMove;
     public Transform wHandler, hHandler;
     public GameObject helm, weapon;
     #endregion
 
     void Start()
     {
-        mainCam = Camera.main.GetComponent<MouseLook>();
-        playerCam = GetComponent<MouseLook>();
-        playerMove = GetComponent<Movement>();
+        playerMove = GetComponent<FirstPersonController>();
         wHandler = GameObject.FindGameObjectWithTag("WeaponHandler").GetComponent<Transform>();
         hHandler = GameObject.FindGameObjectWithTag("HeadHandler").GetComponent<Transform>();
 
@@ -90,8 +88,6 @@ public class Inventory : MonoBehaviour
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            mainCam.enabled = true;
-            playerCam.enabled = true;
             playerMove.enabled = true;
             return (false);
         }
@@ -101,8 +97,6 @@ public class Inventory : MonoBehaviour
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            mainCam.enabled = false;
-            playerCam.enabled = false;
             playerMove.enabled = false;
             return (true);
         }

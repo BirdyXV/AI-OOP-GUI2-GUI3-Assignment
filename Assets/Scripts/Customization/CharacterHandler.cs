@@ -25,7 +25,8 @@ namespace GUIWork
 
         [Header("GUI Section")]
         public GUIStyle healthTexture;
-        public GUIStyle manaTexture, staminaTexture;
+        public GUIStyle manaTexture, staminaTexture, damageFlashTexture;
+        public bool showGUI = false;
         #endregion
 
         #region Start
@@ -54,12 +55,19 @@ namespace GUIWork
 
             if (Input.GetKeyDown(KeyCode.Q)) // IF you press Q once
             {
+                showGUI = !showGUI; // showGUI eqauls to not showGUI
                 curHealth--; // Health stat will remove 1 value from currentHealth
                 curMana--; // Mana stat will remove 1 value from currentMana
             }
-            if (Input.GetKey(KeyCode.LeftShift))
+
+            if (Input.GetKey(KeyCode.LeftShift)) // IF you hold down shift 
             {
-                curStamina--;
+                curStamina--; // curStamina will reduce rapidly (don't know exact amount per second)
+            }
+
+            if (Input.GetKeyUp(KeyCode.Q)) // IF you release the Q button
+            {
+                showGUI = !showGUI; // showGUI will equal to not show GUI
             }
         }
         #endregion
@@ -146,6 +154,13 @@ namespace GUIWork
             GUI.Box(new Rect(6 * scrW, 0.75f * scrH, scrW * 4, 0.5f * scrH), curMana + "/" + maxMana); // Mana stats
 
             GUI.Box(new Rect(6 * scrW, 1.25f * scrH, scrW * 4, 0.5f * scrH), curStamina + "/" + maxStamina); // Stamina stats
+
+            if (!showGUI) // IF not showGUI is true
+            {
+                return; // Return true
+            }
+
+            GUI.Box(new Rect(0 *  scrW, 0 * scrH, 16.5f * scrW, 9.5f * scrH), "", damageFlashTexture); // Red flash GUIBox
 
 
 

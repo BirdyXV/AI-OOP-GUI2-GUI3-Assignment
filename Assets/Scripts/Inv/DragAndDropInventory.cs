@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class DragAndDropInventory : MonoBehaviour
 {
@@ -25,8 +26,8 @@ public class DragAndDropInventory : MonoBehaviour
     private Rect toolTipRect;
 
     [Header("References and Locations")]
-    public Movement playerMove;
-    public MouseLook mainCam, playerCam;
+    public FirstPersonController playerMove;
+    public MouseLook mainCam;
     public float scrW, scrH;
     #endregion
     #region Clamp to Screen
@@ -174,8 +175,7 @@ public class DragAndDropInventory : MonoBehaviour
         scrW = Screen.width / 16;
         scrH = Screen.height / 9;
         mainCam = Camera.main.GetComponent<MouseLook>();
-        playerCam = GetComponent<MouseLook>();
-        playerMove = GetComponent<Movement>();
+        playerMove = GetComponent<FirstPersonController>();
         inventorySize = new Rect(scrW, scrH, 6 * scrW, 4.5f * scrH);
         for (int i = 0; i < slotX * slotY; i++)
         {
@@ -198,8 +198,6 @@ public class DragAndDropInventory : MonoBehaviour
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            mainCam.enabled = true;
-            playerCam.enabled = true;
             playerMove.enabled = true;
             return (false);
         }
@@ -209,8 +207,6 @@ public class DragAndDropInventory : MonoBehaviour
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            mainCam.enabled = false;
-            playerCam.enabled = false;
             playerMove.enabled = false;
             return (true);
         }
@@ -273,3 +269,6 @@ public class DragAndDropInventory : MonoBehaviour
     }
     #endregion
 }
+
+
+
